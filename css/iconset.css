@@ -1,0 +1,396 @@
+/****** ADD CSS *****/
+.page-container.scroll {
+  overflow: auto;
+}
+.scroll {
+  overflow-y: auto;
+}
+
+.list {
+  background-color: #ffffff;
+  height: 72px;
+  display: block;
+  text-decoration: none;
+  box-sizing: content-box;
+  border-bottom: 1px solid #f2f2f2;
+  position: relative;
+}
+.list:last-child .list-payment-logo {
+  border-bottom: 0;
+}
+.list-payment-logo {
+  padding: 0px 0px 0px 16px;
+  float: left;
+  border-bottom: 1px solid #ffffff;
+  width: 58px;
+}
+.list.with-promo .list-content {
+  width: calc(100% - 164px);
+}
+.list.with-promo .list-content {
+  width: calc(100% - 148px);
+}
+.list-content {
+  vertical-align: middle;
+  width: calc(100% - 116px);
+  height: 58px;
+  float: left;
+  padding-top: 4px;
+}
+.sprite.header-prev {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+.sprite.ovo {
+  background-position: -30px -379px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.cimbqr {
+  background-position: -65px -425px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.linkaja {
+  background-position: 3px -425px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.linkajaqr {
+  background-position: 3px -378px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.linkajaapplink {
+  background-position: 3px -378px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.list-next {
+  background-position: -20px 0px;
+  width: 12px;
+  height: 12px;
+  margin: 0.9em;
+}
+.sprite.permata {
+  background-position: -80px -232px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.cimb-clicks {
+  background-position: -80px -32px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.bca-klikpay {
+  background-position: -80px -152px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.bri-epay {
+  background-position: 0px -112px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.danamon-online {
+  background-position: -80px -392px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.mandiri {
+  background-position: -40px -232px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.mandiri-clickpay {
+  background-position: -40px -112px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.mandiriqr {
+  background-position: -38px -204px;
+  width: 40px;
+  height: 30px;
+}
+.sprite.creditcard {
+  background-position: 0px -272px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.ccinstall3 {
+  background-position: 0px -272px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.ccinstall6 {
+  background-position: 0px -272px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.ccinstall12 {
+  background-position: 0px -272px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.creditcardedc {
+  background-position: 0px -272px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.gopay {
+  background-position: -120px -112px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.amex-safekey {
+  background-position: -40px -392px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.jcb-jsecure {
+  background-position: -120px -352px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.norton-secured {
+  background-position: -0px -352px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.verified-visa {
+  background-position: -40px -352px;
+  width: 38px;
+  height: 38px;
+}
+.sprite.mastercard-securecode {
+  background-position: -80px -352px;
+  width: 38px;
+  height: 38px;
+}
+
+.sprite.modal-close-light {
+  background-position: -90px 0;
+  width: 16px;
+  height: 16px;
+}
+
+.sprite.header-prev {
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+.sprite.indomaret {
+  background-position: -40px -72px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.alfamart {
+  background-position: -80px -72px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.permata-net {
+  background-position: -5px -458px;
+  width: 45px;
+  height: 24px;
+}
+.sprite.jenius {
+  background-position: -52px -408px;
+  width: 45px;
+  height: 28px;
+}
+.sprite.shopeejumpapp {
+  background-position: -105px -380px;
+  width: 45px;
+  height: 30px;
+}
+.sprite.shopeeqr {
+  background-position: -105px -380px;
+  width: 45px;
+  height: 30px;
+}
+.sprite.danapay {
+  background-position: -55px -435px;
+  width: 45px;
+  height: 40px;
+}
+.sprite.danaqr {
+  background-position: -55px -435px;
+  width: 45px;
+  height: 40px;
+}
+.sprite.danajumpapp {
+  background-position: -55px -435px;
+  width: 45px;
+  height: 40px;
+}
+.sprite.jakone {
+  background-position: -5px -485px;
+  width: 46px;
+  height: 45px;
+}
+.sprite.cimb-directdebit {
+  background-position: -105px -485px;
+  width: 46px;
+  height: 45px;
+}
+.sprite.mandiri-qr {
+  background-position: -105px -485px;
+  width: 46px;
+  height: 45px;
+}
+.sprite.espaywallet {
+  background-position: -105px -458px;
+  width: 45px;
+  height: 25px;
+}
+.sprite.saldomu {
+  background-position: -5px -529px;
+  width: 45px;
+  height: 22px;
+}
+.sprite.saldomuqr {
+  background-position: -5px -472px;
+  width: 47px;
+  height: 30px;
+}
+.sprite.kredivo {
+  background-position: -54px -467px;
+  width: 45px;
+  height: 35px;
+}
+.sprite.bri-directdebit {
+  background-position: -105px -469px;
+  width: 50px;
+  height: 22px;
+}
+.sprite.blu {
+  background-position: -51px -491px;
+  width: 42px;
+  height: 36px;
+}
+.sprite.akulaku {
+  background-position: -117px -346px;
+  width: 45px;
+  height: 40px;
+}
+.sprite.bsiatm {
+  background-position: -107px -490px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.btn {
+  background-position: -4px -580px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.cimb {
+  background-position: -107px -577px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.cimb-qrstatis {
+  background-position: -62px -377px;
+  width: 35px;
+  height: 30px;
+}
+.sprite.cimb-qrdinamis {
+  background-position: -62px -377px;
+  width: 35px;
+  height: 30px;
+}
+.sprite.saldomu {
+  background-position: -107px -577px;
+  width: 40px;
+  height: 40px;
+}
+.sprite.billertokped {
+  background-position: -105px -538px;
+  width: 50px;
+  height: 25px;
+}
+.sprite.pos {
+  background-position: -55px -527px;
+  width: 40px;
+  height: 30px;
+}
+.sprite {
+  background-image: url(../img/spriteicons.png);
+  background-size: 160px 557px;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 calc((100% - (35px * 5)) / 10);
+}
+.closeModal {
+  cursor: pointer;
+}
+.backModalButton {
+  cursor: pointer;
+}
+.ic_atm {
+  background-image: url(/../../images/sgoplusv2/ic_atm.svg);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  display: block;
+}
+.bank-logo.maybank {
+  background-position: -360px -10px;
+}
+.bank-logo.cimb {
+  background-position: -300px -10px;
+}
+.bank-logo.mandiri {
+  background-position: -60px -10px;
+}
+.bank-logo.permata {
+  background-position: -120px -10px;
+}
+.bank-logo.bca {
+  background-position: 0 -10px;
+}
+.bank-logo.bri {
+  background-position: -240px -10px;
+}
+.bank-logo.bni {
+  background-position: -180px -10px;
+}
+.bank-logo.ocbc {
+  background-position: -540px -380px;
+}
+.bank-logo.mega {
+  background-position: -120px -140px;
+}
+.bank-logo.hsbc {
+  background-position: -360px -80px;
+}
+.bank-logo.danamon {
+  background-position: -60px -250px;
+}
+.bank-logo.mandiri-syariah {
+  background-position: -240px -260px;
+}
+.bank-logo.btn {
+  background-position: -478px -260px;
+}
+.bank-logo {
+  background-image: url(../img/bankicons.png);
+  background-size: 597px 477px;
+  background-repeat: no-repeat;
+  display: block;
+  font-size: 0;
+  height: 40px;
+  width: 57px;
+  margin: 0 calc((100% - (57px * 5)) / 10);
+}
+
+.defaultlogo {
+  background-image: url(/../../images/sgoplusv2/logo_espay.png);
+  background-size: 597px 477px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-size: 0;
+  height: 40px;
+  width: 57px;
+  margin: 0 calc((100% - (57px * 5)) / 10);
+}

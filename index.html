@@ -14,6 +14,7 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom Style -->
+  <link href="css/iconset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Favicons -->
@@ -66,12 +67,33 @@
 
       </nav>
       <br />
+      <div class="alert alert-warning d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+          class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+          aria-label="Warning:">
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <div>
+          Lakukan pembayaran sebelum <strong>10 Mei 2023 01:38pm </strong>
+        </div>
+      </div>
+
+
       <div class="accordion accordion-flush bg-light" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+          <h2 class="accordion-header bg-info" id="flush-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <b>Order Detail</b>
+              <div class="d-flex flex-row bd-highlight">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-cart mx-2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <b>Order Detail</b>
+              </div>
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -85,7 +107,7 @@
                 </div>
 
                 <div class="items-price">
-                  Rp. 33.000
+                  Rp. 30.000
                 </div>
               </div>
               <hr />
@@ -132,7 +154,7 @@
       </div>
 
 
-      <span class="title mt-16 mb-16">Silakan pilih metode pembayaran untuk melakukan pembayaran.</span>
+      <span class="title mt-16 mb-16 text-info">Silakan pilih metode pembayaran untuk melakukan pembayaran.</span>
       <!-- Konten Payment Channel Offering -->
       <div class="accordion mt-16" id="accordionPanelsStayOpenExample">
         <div class="accordion-item payment-channel-accordion">
@@ -149,50 +171,97 @@
               <ul class="list-group list-group-flush list-group-va">
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
-                    <img class="va-bank" src="img/ic_bank_bca.png">
-                    <span class="va-account-number text-center flex-grow-1">888999 XXXXXXXXXX
+                    <i class="va-bank align-self-start bank-logo bca"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">BCA VA Online</strong>
+                        <span>ATM,mBCA,KlikBCA</span>
+                      </div>
                     </span>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
-                      <img src="img/icon-content-copy-24-px.svg" width="18">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
                     </a>
                   </div>
                 </li>
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
-                    <img class="va-bank" src="img/ic_bank_mandiri.png">
-                    <span class="va-account-number text-center flex-grow-1">888999 XXXXXXXXXX
+                    <i class="va-bank align-self-start bank-logo bni"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">BNI VA</strong>
+                        <span>ATM,Internet Banking</span>
+                      </div>
                     </span>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
-                      <img src="img/icon-content-copy-24-px.svg" width="18">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
                     </a>
                   </div>
                 </li>
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
-                    <img class="va-bank" src="img/ic_maybank.png">
-                    <span class="va-account-number text-center flex-grow-1">888999 XXXXXXXXXX
+                    <i class="va-bank align-self-start bank-logo bri"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">BRI VA</strong>
+                        <span>ATM,Internet Banking</span>
+                      </div>
                     </span>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
-                      <img src="img/icon-content-copy-24-px.svg" width="18">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
                     </a>
                   </div>
                 </li>
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
-                    <img class="va-bank" src="img/ic_bank_permata.png">
-                    <span class="va-account-number text-center flex-grow-1">888999 XXXXXXXXXX
+                    <i class="va-bank align-self-start bank-logo danamon"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Danamon VA</strong>
+                        <span>ATM,Internet Banking</span>
+                      </div>
                     </span>
                     <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
-                      <img src="img/icon-content-copy-24-px.svg" width="18">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
                     </a>
                   </div>
                 </li>
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start bank-logo permata"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Permata VA</strong>
+                        <span>ATM,Internet Banking</span>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
               </ul>
-              <div class="d-flex flex-fill justify-content-center align-items-start mt-16">
-                <img class="align-self-start mx-1" src="img/ic_info_red.png">
-                <span class="va-note-info">Gunakan nomor Virtual Account di atas untuk melakukan transfer.
-                </span>
-              </div>
+
             </div>
           </div>
         </div>
@@ -202,7 +271,7 @@
             <button class="accordion-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
               aria-controls="panelsStayOpen-collapseTwo">
-              <strong>Credit Card</strong>
+              <strong>Credit / Debit Card</strong>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -210,19 +279,11 @@
             <div class="accordion-body">
               <!-- Credit Card Field -->
               <form class="row espay-form">
-                <div class="input-group col-md-12">
 
-                  <label for="inputAmount" class="form-label fs-5">Input Amount</label>
-                  <div class="input-group input-amount mb-3">
-                    <span class="input-group-text" id="basic-addon1">Rp.</span>
-                    <input type="text" class="form-control amount" placeholder="0.00" aria-label="Username"
-                      aria-describedby="basic-addon1">
-                  </div>
-                </div>
 
                 <div class="input-group col-md-12">
 
-                  <label for="inputAmount" class="form-label fs-5 col-md-12">Credit Card Information</label>
+                  <label for="inputAmount" class="form-label fs-5 col-md-12">Card Information</label>
                   <label for="inputCCNumber" class="form-label col-md-12">Card Number</label>
                   <div class="input-group">
                     <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -232,18 +293,18 @@
                         <path
                           d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
                       </svg></span>
-                    <input type="text" class="form-control amount" placeholder="XXXX-XXXX-XXXX-XXXX"
+                    <input type="text" class="form-control amount" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX"
                       aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <label for="inputExpDate" class="form-label">Expire Date</label>
-                  <input type="text" class="form-control" id="inputExpDate" placeholder="MM / YY">
+                  <input type="text" maxlength="6" class="form-control" id="inputExpDate" placeholder="MM / YY">
                 </div>
                 <div class="col-md-6">
                   <label for="inputCvv" class="form-label">CVV Code</label>
-                  <input type="text" class="form-control" id="inputCvv" placeholder="XXXX">
+                  <input type="text" maxlength="3" class="form-control" id="inputCvv" placeholder="XXXX">
                 </div>
 
 
@@ -278,55 +339,100 @@
             aria-labelledby="panelsStayOpen-headingThree">
             <div class="accordion-body">
               <!-- Emoney Field -->
-              <form class="row espay-form list-emoney g-1">
 
 
-                <label for="selectEmoney" class="form-label fs-5">Select E-Money</label>
-                <ul class="list-group list-group-flush list-emoney">
-                  <li class=" list-group-item">
-                    <a href="#">
-                      <div class="d-flex flex-fill align-items-center">
-                        <img src="img/logo-ovo.png">
-                        <span class="p-2">OVO</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class=" list-group-item">
-                    <a href="#">
-                      <div class="d-flex flex-fill align-items-center">
-                        <img src="img/logo_gopay.png">
-                        <span class="p-2">gopay</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class=" list-group-item">
-                    <a href="#">
-                      <div class="d-flex flex-fill align-items-center">
-                        <img src="img/logo_Dana.png">
-                        <span class="p-2">Dana</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class=" list-group-item">
-                    <a href="#">
-                      <div class="d-flex flex-fill align-items-center">
-                        <img src="img/logo_shopee.png">
-                        <span class="p-2">ShopeePay</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class=" list-group-item">
-                    <a href="#">
-                      <div class="d-flex flex-fill align-items-center">
-                        <img src="img/logo-link-aja.png">
-                        <span class="p-2">LinkAja</span>
-                      </div>
-                    </a>
-                  </li>
 
-                </ul>
+              <ul class="list-group list-group-flush list-group-va">
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite kredivo"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Kredivo</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
 
-                <!-- <div class="row equal g-1 align-items-center">
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite akulaku"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Akulaku</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite blu"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Blu by BCA Digital</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite ovo"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">OVO</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite danapay"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Dana</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+              </ul>
+
+              <!-- <div class="row equal g-1 align-items-center">
                       <div class="col-6 align-items-center">
                         <div class="border bg-light text-center"><a href="#"><img src="img/logo-oneklik.png"></a>
                         </div>
@@ -347,7 +453,7 @@
 
                     </div> -->
 
-              </form>
+
               <!-- End of Emoney Field -->
             </div>
           </div>
