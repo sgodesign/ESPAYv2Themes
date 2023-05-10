@@ -66,8 +66,9 @@
         </div>
 
       </nav>
+
       <br />
-      <div class="alert alert-warning d-flex align-items-center" role="alert">
+      <!-- <div class="alert alert-warning d-flex align-items-center" role="alert">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
           class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
           aria-label="Warning:">
@@ -77,97 +78,110 @@
         <div>
           Lakukan pembayaran sebelum <strong>10 Mei 2023 01:38pm </strong>
         </div>
-      </div>
-
-
-      <div class="accordion accordion-flush bg-light" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header bg-info" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <div class="d-flex flex-row bd-highlight">
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-cart mx-2" viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>
-                <b>Order Detail</b>
-              </div>
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <div class="d-flex justify-content-between">
-                <div class="items d-flex flex-column">
-                  <span>Susu Kaleng</span>
-                  <span>1x </span>
-
-                </div>
-
-                <div class="items-price">
-                  Rp. 30.000
-                </div>
-              </div>
-              <hr />
-              <div class="d-flex justify-content-end mt-4 bg-light">
-                <div class="items-total mx-2">
-                  <span><strong>Sub Total</strong></span>
-
-
-                </div>
-
-                <div class="total-price mx-2">
-                  <span><strong>Rp. 33.000</strong></span>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end bg-light">
-                <div class="items-total mx-2">
-                  <span>Admin</span>
-
-
-                </div>
-
-                <div class="total-price mx-2">
-                  <span><strong>Rp. 3.000</strong></span>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end bg-light">
-                <div class="items-total mx-2">
-                  <span>Total amount due</span>
-
-
-                </div>
-
-                <div class="total-price mx-2">
-                  <span><strong>Rp. 33.000</strong></span>
-                </div>
-              </div>
-            </div>
+      </div> -->
 
 
 
-          </div>
+
+      <div class="d-flex flex-row justify-content-between mt-2">
+        <div class="d-flex flex-row bd-highlight">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart mx-2"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+          <b>Order Detail (1 item) </b>
         </div>
 
+        <a class="link-info" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <b>Lihat</b>
+        </a>
+      </div>
+      <hr />
+
+
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <div class="d-flex justify-content-between">
+            <div class="items d-flex flex-column">
+              <span>Susu Kaleng</span>
+              <span>1x </span>
+
+            </div>
+
+            <div class="items-price">
+              Rp. 30.000
+            </div>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-end bg-light">
+            <div class="items-total mx-2">
+              <span><strong>Sub Total</strong></span>
+
+
+            </div>
+
+            <div class="total-price mx-2">
+              <span><strong>Rp. 33.000</strong></span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end bg-light">
+            <div class="items-total mx-2">
+              <span>Admin</span>
+
+
+            </div>
+
+            <div class="total-price mx-2">
+              <span><strong>Rp. 3.000</strong></span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end bg-light">
+            <div class="items-total mx-2">
+              <span>Total amount due</span>
+
+
+            </div>
+
+            <div class="total-price mx-2">
+              <span><strong>Rp. 33.000</strong></span>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- Amount Info-->
+      <div class="card mt-24">
+        <div class="card-body d-flex flex-column text-center bg-light">
+          <span>Total Bayar</span>
+          <span class="text-capitalize fs-1">Rp. 33.000</span>
+        </div>
+      </div>
+      <!-- End of Amount Info-->
 
-      <span class="title mt-16 mb-16 text-info">Silakan pilih metode pembayaran untuk melakukan pembayaran.</span>
-      <!-- Konten Payment Channel Offering -->
-      <div class="accordion mt-16" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item payment-channel-accordion">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne">
-              <strong>Bank Transfer</strong>
+      <span class="title mt-16 mb-16">Silakan pilih metode pembayaran untuk melakukan pembayaran.</span>
+
+
+      <!-- Accordion PG Channel-->
+      <div class="accordion mt-24" id="accordionExample">
+        <!-- Bank Transfer-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button d-flex align-items-center justify-content-center" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-bank2 txt-primary" viewBox="0 0 16 16">
+                <path
+                  d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z" />
+              </svg><strong class="p-2">Bank Transfer</strong>
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse " aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Scroll to view more VA numbers">
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body bg-light">
               <ul class="list-group list-group-flush list-group-va">
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
@@ -261,22 +275,71 @@
                 </li>
 
               </ul>
-
             </div>
           </div>
         </div>
+        <!-- End of Bank Transfer-->
 
-        <div class="accordion-item payment-channel-accordion">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseTwo">
-              <strong>Credit / Debit Card</strong>
+        <!-- Internet Banking-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-globe txt-primary" viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+              </svg>
+              <strong class="p-2">Internet Banking / Direct Debit</strong>
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body bg-light">
+              <ul class="list-group list-group-flush list-group-va">
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start bank-logo bri"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">BRI Direct Debit</strong>
+                        <span>Internet Banking BRI</span>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Internet Banking-->
+
+        <!-- Debit Credit-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-credit-card txt-primary" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+              </svg>
+              <strong class="p-2">Debit / Credit Card</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body bg-light">
               <!-- Credit Card Field -->
               <form class="row espay-form">
 
@@ -318,7 +381,7 @@
                 </div>
                 <div class="col-12">
                   <div class="d-grid mt-16">
-                    <button class="btn btn-primary btn-primary" type="button">Submit</button>
+                    <button class="btn btn-secondary p-2" type="button">Submit</button>
                   </div>
                 </div>
               </form>
@@ -326,22 +389,25 @@
             </div>
           </div>
         </div>
+        <!-- End of Debit Credit-->
 
-        <div class="accordion-item payment-channel-accordion">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseThree">
-              <strong>E-Money</strong>
+        <!--E-Money-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-phone txt-primary" viewBox="0 0 16 16">
+                <path
+                  d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              </svg>
+              <strong class="p-2">E-Money</strong>
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse "
-            aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-              <!-- Emoney Field -->
-
-
-
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body bg-light">
               <ul class="list-group list-group-flush list-group-va">
                 <li class="list-group-item va-account-list">
                   <div class="d-flex flex-fill align-items-center">
@@ -431,38 +497,73 @@
                 </li>
 
               </ul>
-
-              <!-- <div class="row equal g-1 align-items-center">
-                      <div class="col-6 align-items-center">
-                        <div class="border bg-light text-center"><a href="#"><img src="img/logo-oneklik.png"></a>
-                        </div>
-                      </div>
-                      <div class="col-6 align-items-center">
-                        <div class="border bg-light text-center"><a href="#"><img src="img/logo-link-aja.png"></a>
-                        </div>
-                      </div>
-                      <div class="col-6 align-items-center">
-                        <div class="border bg-light text-center"><a href="#"><img src="img/logo-link-aja.png"></a>
-                        </div>
-                      </div>
-                      <div class="col-6 align-items-center">
-                        <div class="border bg-light text-center"><a href="transaction-overview.html"><img
-                              src="img/logo-ovo.png"></a>
-                        </div>
-                      </div>
-
-                    </div> -->
-
-
-              <!-- End of Emoney Field -->
             </div>
           </div>
         </div>
+        <!--End of E-Money-->
+
+        <!-- Modern Market -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-shop txt-primary" viewBox="0 0 16 16">
+                <path
+                  d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+              </svg>
+              <strong class="p-2">Modern Market</strong>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body bg-light">
+              <ul class="list-group list-group-flush list-group-va">
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite indomaret"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Indomaret</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+
+                <li class="list-group-item va-account-list">
+                  <div class="d-flex flex-fill align-items-center">
+                    <i class="va-bank align-self-start sprite alfamart"></i>
+                    <span class="va-account-number flex-grow-1">
+                      <div class="d-flex flex-column">
+                        <strong class="text-dark">Alfamart</strong>
+                      </div>
+                    </span>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to COPY">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                      </svg>
+                    </a>
+                  </div>
+                </li>
 
 
-
-
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Modern Market -->
       </div>
+      <!-- End of Accordion PG Channel-->
+      <div class="espay-line"></div>
       <footer class="footer mt-auto mb-auto">
         <div class="container-tab-content">
 
