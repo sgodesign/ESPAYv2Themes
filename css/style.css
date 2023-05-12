@@ -171,6 +171,23 @@ nav.nav-head span {
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
+.list-group .va-account-list a {
+  width: 100%;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.list-group .va-account-list:hover {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0rem;
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  opacity: 0.8;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
+}
 
 span.va-account-number {
   font-size: 14px;
